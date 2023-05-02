@@ -1,13 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{testpackagefs}[2023/05/02 Test Package]
+\ProvidesPackage{fischmacros}[2023/05/02 FiSch Macros]
 
-\RequirePackage{listings}
-\RequirePackage{titlesec}
 \RequirePackage{amsmath}
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
-\RequirePackage{scrextend}
-\RequirePackage{wasysym}
 
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\N}{\mathbb{N}}
@@ -30,6 +26,20 @@
     \end{center}
 }
 
-\titleformat{\subsection}{\normalfont\fontsize{10}{15}\bfseries}{\thesection}{1em}{}
+\newcommand{\sumrow}[2][n]{
+    \sum_{#1 = 0}^{\infty}#2
+}
+
+\newcommand{\sumrowc}[3]{
+    \sum_{#1 = 0}^{#2}#3
+}
+
+\newcommand{\limi}[2][n]{
+    \lim_{#1\to\infty}#2
+}
+
+\newcommand{\limn}[2][n]{
+    \lim_{#1\to 0}#2
+}
 
 \endinput
