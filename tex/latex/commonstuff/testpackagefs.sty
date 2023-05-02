@@ -9,4 +9,27 @@
 \RequirePackage{scrextend}
 \RequirePackage{wasysym}
 
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\newcommand{\customtitle}[3]{
+    \begin{center}
+        \LARGE
+        #1
+
+        \vspace{0.4cm}
+        \large
+        #2
+
+        \vspace{0.4cm}
+        #3
+    \end{center}
+}
+
+\titleformat{\subsection}{\normalfont\fontsize{10}{15}\bfseries}{\thesection}{1em}{}
+
 \endinput
