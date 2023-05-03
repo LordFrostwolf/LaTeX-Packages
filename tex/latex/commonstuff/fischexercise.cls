@@ -5,3 +5,9 @@
 \RequirePackage{fischmacros}
 \RequirePackage{listings}
 \RequirePackage{wasysym}
+
+%\renewcommand{\section}[1]{
+%    \hrule
+%    \large #1
+%    \hrule
+%}

@@ -21,6 +21,7 @@
         \large
         #2
 
+        \normalsize
         \vspace{0.4cm}
         #3
     \end{center}
@@ -30,16 +31,16 @@
     \sum_{#1 = 0}^{\infty}#2
 }
 
-\newcommand{\sumrowc}[3]{
-    \sum_{#1 = 0}^{#2}#3
+\newcommand{\sumrowc}[4]{
+    \sum_{#1 = #2}^{#3}#4
 }
 
-\newcommand{\limi}[2][n]{
-    \lim_{#1\to\infty}#2
+\newcommand{\limi}[1][n]{
+    \lim_{#1\to\infty}
 }
 
-\newcommand{\limn}[2][n]{
-    \lim_{#1\to 0}#2
+\newcommand{\limn}[1][n]{
+    \lim_{#1\to 0}
 }
 
 \endinput
