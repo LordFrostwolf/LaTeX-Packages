@@ -37,6 +37,7 @@
 }
 
 \renewcommand{\subsection}[1]{
+    \vspace{5mm}
     \noindent\textbf{#1}
     \vspace{1mm}\\
 }
