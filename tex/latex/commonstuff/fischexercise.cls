@@ -1,27 +1,42 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{fischexercise}[2023/05/02 FiSch Exercise Layout]
-\LoadClass{scrartcl}
+\LoadClass{scrartcl}[12pt]
 
 \RequirePackage{fischmacros}
 \RequirePackage{listings}
 \RequirePackage{wasysym}
 \RequirePackage{tikz}
-
-%\renewcommand{\section}[1]{
-%    \hrule
-%    \large #1
-%    \hrule
-%}
+\RequirePackage{xcolor}
+\RequirePackage[T1]{fontenc}
 
 \renewcommand{\customtitle}[3]{
+    \addtokomafont{pagenumber}{\fontfamily{lmss}\selectfont}
+    \fontfamily{lmss}\selectfont
     \begin{flushleft}
         \makebox[\columnwidth]{
             \begin{tikzpicture}
-                \draw (0, 0) node[inner sep=5] {\includegraphics[width=\paperwidth]{title-background-export-var.png}};
+                \draw (0, 0) node[inner sep=5] {\includegraphics[width=\paperwidth]{title-background-var.png}};
                 \draw (0, 1.25) node[align = right,text width=\paperwidth-1cm] {\LARGE\textbf{#1}};
                 \draw (0, 0.25) node[align = right,text width=\paperwidth-1cm] {\large\textbf{#2}};
                 \draw (0, -0.75) node[align = right,text width=\paperwidth-1cm] {\textbf{#3}};
             \end{tikzpicture}
         }
     \end{flushleft}
+
+}
+
+\renewcommand{\section}[1]{
+    \begin{flushright}
+        \makebox[\columnwidth]{
+            \begin{tikzpicture}
+                \draw (0, 0) node[inner sep=5] {\includegraphics[width=\paperwidth]{section-background.png}};
+                \draw (0, 0) node[align = left,text width=\paperwidth-1cm] {\large\color{white}\textbf{#1}};
+            \end{tikzpicture}
+        }
+    \end{flushright}
+}
+
+\renewcommand{\subsection}[1]{
+    \noindent\textbf{#1}
+    \vspace{1mm}\\
 }

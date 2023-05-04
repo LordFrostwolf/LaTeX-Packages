@@ -43,4 +43,30 @@
     \lim_{#1\to 0}
 }
 
+\newcommand{\setcode}[1][Python]{
+    \usepackage[scale=0.85]{sourcecodepro}
+    \lstset{
+        language=#1,
+        tabsize=4,
+        basicstyle=\ttfamily,
+        columns=fullflexible,
+        keepspaces,
+    }
+}
+
+\newcommand{\setcodenum}[1][Python]{
+    \usepackage[scale=0.85]{sourcecodepro}
+    \lstset{
+        language=#1,
+        numbers=left,
+        numberstyle=\tiny,
+        stepnumber=1,
+        numbersep=5pt,
+        tabsize=4,
+        basicstyle=\ttfamily,
+        columns=fullflexible,
+        keepspaces,
+    }
+}
+
 \endinput
