@@ -12,6 +12,7 @@
 \renewcommand{\customtitle}[3]{
     \addtokomafont{pagenumber}{\fontfamily{lmss}\selectfont}
     \fontfamily{lmss}\selectfont
+    \setlength\parindent{0pt}
     \begin{flushleft}
         \makebox[\columnwidth]{
             \begin{tikzpicture}
