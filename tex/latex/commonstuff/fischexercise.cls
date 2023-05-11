@@ -8,6 +8,7 @@
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
 \RequirePackage[T1]{fontenc}
+\RequirePackage{enumitem}
 
 \renewcommand{\customtitle}[3]{
     \addtokomafont{pagenumber}{\fontfamily{lmss}\selectfont}
