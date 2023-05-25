@@ -9,6 +9,10 @@
 \RequirePackage{xcolor}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{enumitem}
+\RequirePackage{forest}
+\RequirePackage{lstlangarm}
+
+\definecolor{lightred}{RGB}{255, 136, 136}
 
 \renewcommand{\customtitle}[3]{
     \addtokomafont{pagenumber}{\fontfamily{lmss}\selectfont}
