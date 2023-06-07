@@ -69,4 +69,37 @@
     }
 }
 
+\newcommand{\setforest}{
+    \pgfkeys{/forest,
+        t/.style={
+                node format={
+                        \noexpand\node [
+                            draw,
+                            shape=regular polygon,
+                            regular polygon sides=3,
+                            inner sep=2.5pt,
+                            outer sep=0pt,
+                            \forestoption{node options},
+                            anchor=\forestoption{anchor}
+                        ]
+                        (\forestoption{name}) {\foresteoption{content format}};
+                    },
+                child anchor=north,
+                edge path={
+                        \noexpand\path[\forestoption{edge}]
+                        (!u.parent anchor) --
+                        (.child anchor)\forestoption{edge label};
+                    },
+            },
+    }
+    \forestset{
+        n/.style={
+                shape=circle, draw, minimum size=2.2em
+            },
+        m/.style={draw=none, no edge},
+        r/.style={shape=circle, draw, minimum size=2.2em, fill=lightred, draw=red},
+        b/.style={shape=circle, draw, minimum size=2.2em, fill=darkgray, text=white},
+    }
+}
+
 \endinput
