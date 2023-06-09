@@ -11,6 +11,7 @@
 \RequirePackage{enumitem}
 \RequirePackage{forest}
 \RequirePackage{lstlangarm}
+\RequirePackage{MnSymbol}
 
 \definecolor{lightred}{RGB}{255, 136, 136}
 
