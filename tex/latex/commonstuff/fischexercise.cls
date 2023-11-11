@@ -12,6 +12,7 @@
 \RequirePackage{forest}
 \RequirePackage{lstlangarm}
 \RequirePackage{MnSymbol}
+\RequirePackage{mathtools}
 
 \definecolor{lightred}{RGB}{255, 136, 136}
 
