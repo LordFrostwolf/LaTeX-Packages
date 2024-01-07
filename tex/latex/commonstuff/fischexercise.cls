@@ -49,3 +49,7 @@
     \noindent\textbf{#1}
     \vspace{1mm}\\
 }
+
+\renewcommand{\epsilon}{
+    \varepsilon
+}
